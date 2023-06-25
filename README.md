@@ -17,14 +17,14 @@ Bu projenin başarılı bir şekilde tamamlanması, dijital ürünlerin satış�
 
 ## Kullanılan Teknolojiler
 
-# JWT
-# Action Filter
-# Microsoft Identity 
-# Entity Framework
-# Unit of Work
-# Generic Repository
-# Autofac
-# Mapper
+ JWT,
+ Action Filter,
+ Microsoft Identity,
+ Entity Framework,
+ Unit of Work,
+ Generic Repository,
+ Autofac,
+ Mapper
 
 
 ## Postmande oluşturulan dokümantasyon linkleri ve ekran görüntüleri
