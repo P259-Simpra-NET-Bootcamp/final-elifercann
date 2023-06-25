@@ -74,6 +74,6 @@ User apisi için : https://documenter.getpostman.com/view/16297412/2s93z6eQMz
 
 Repoyu bilgisayarınıza indirmek için git kullanabilirsiniz.
 
-git clone https://github.com/zcomert/BTK-Akademi-ASPNET-Core-Web-Api.git
+git clone https://github.com/P259-Simpra-NET-Bootcamp/final-elifercann.git
 
 appsetting.json dosyasında veri tabanı bağlantı linkinizi giriniz. Daha sonra add-migration ile migration dosyalarınızı oluşturup update-databse ile veri tabanına yansıtın. Sonrasında SeedData içerisinde admin kullanıcısı oluşturuluyor username ve passwordu orada tanımlıdır. 
