@@ -1,0 +1,36 @@
+2023-06-17 00:15:59.0923 Info Message Template Auto Format enabled
+2023-06-17 00:15:59.1809 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:15:59.2097 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:20:55.0500 Info Message Template Auto Format enabled
+2023-06-17 00:20:55.1174 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:20:55.1431 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:23:19.6296 Info Message Template Auto Format enabled
+2023-06-17 00:23:19.7689 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:23:19.8021 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:24:32.2629 Info Message Template Auto Format enabled
+2023-06-17 00:24:32.3475 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:24:32.3808 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:28:47.1093 Info Message Template Auto Format enabled
+2023-06-17 00:28:47.2285 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:28:47.2521 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:33:50.3885 Info Message Template Auto Format enabled
+2023-06-17 00:33:50.4702 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:33:50.4919 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:37:00.7166 Info Message Template Auto Format enabled
+2023-06-17 00:37:00.7913 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:37:00.8153 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:39:46.9985 Info Message Template Auto Format enabled
+2023-06-17 00:39:47.0791 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:39:47.1240 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:40:01.9332 Info Message Template Auto Format enabled
+2023-06-17 00:40:02.0196 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:40:02.0438 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:41:56.9652 Info Message Template Auto Format enabled
+2023-06-17 00:41:57.0640 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:41:57.1111 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:42:12.6070 Info Message Template Auto Format enabled
+2023-06-17 00:42:12.7209 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:42:12.7515 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
+2023-06-17 00:45:17.4899 Info Message Template Auto Format enabled
+2023-06-17 00:45:17.6463 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-17 00:45:17.6663 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\ercan\source\repos\Finally.simApi\simApi.Controller\nlog.config
