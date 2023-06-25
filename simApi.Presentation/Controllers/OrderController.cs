@@ -58,7 +58,7 @@ namespace simApi.Presentation.Controllers
             return orderList;
         }
         [HttpGet("{id}")]
-
+        [Authorize(Roles = "admin,user", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ApiResponse<OrderResponse> GetById([FromRoute] int id)
         {
             var order = orderService.GetById(id);

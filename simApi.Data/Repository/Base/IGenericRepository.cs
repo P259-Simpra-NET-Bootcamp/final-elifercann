@@ -14,13 +14,9 @@ public interface IGenericRepository<Entity> where Entity : BaseModel
     void Delete(Entity entity);
     void DeleteWith(int id);
     List<Entity> GetAll();
-    //IQueryable<Entity> GetAsQueryable();
     List<Entity> GetAllAsNoTracking();
     List<Entity> GetAllWithInclude(params string[] includes);
     IEnumerable<Entity> Where(Expression<Func<Entity, bool>> expression);
-    //IEnumerable<Entity> WhereAsNoTracking(Expression<Func<Entity, bool>> expression);
-    //IEnumerable<Entity> WhereWithInclude(Expression<Func<Entity, bool>> expression, params string[] includes);
-
 
     void Complete();
     void CompleteWithTransaction();

@@ -23,8 +23,6 @@ public static class DbContextExtension
               opts.UseNpgsql(dbConfig));
         }
 
-        services.AddScoped<DapperSimDbContext>();
-
         services.AddIdentity<AppUser, IdentityRole>()
              .AddEntityFrameworkStores<ApplicationContext>();
 

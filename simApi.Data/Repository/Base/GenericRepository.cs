@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using simApi.Base;
 using System.Linq.Expressions;
-using static Dapper.SqlMapper;
 
 namespace simApi.Data.Repository;
 public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity : BaseModel
@@ -45,18 +44,6 @@ public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity
         query = includes.Aggregate(query, (current, inc) => current.Include(inc));
         return query.FirstOrDefault(x => x.Id == id);
     }
-    //public IEnumerable<Entity> WhereWithInclude(Expression<Func<Entity, bool>> expression, params string[] includes)
-    //{
-    //    var query = dbContext.Set<Entity>().AsQueryable();
-    //    query.Where(expression);
-    //    query = includes.Aggregate(query, (current, inc) => current.Include(inc));
-    //    return query.ToList();
-    //}
-
-    //public IQueryable<Entity> GetAsQueryable()
-    //{
-    //    return dbContext.Set<Entity>().AsQueryable();
-    //}
     public Entity GetById(int id)
     {
         return dbContext.Set<Entity>().Where(p => p.Id == id).FirstOrDefault();
@@ -69,7 +56,7 @@ public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity
     public void Insert(Entity entity)
     {
         entity.CreatedAt = DateTime.UtcNow;
-        entity.CreatedBy = "simpra@sim.com";
+        entity.CreatedBy = "simshop@sim.com";
 
         dbContext.Set<Entity>().Add(entity);
     }
@@ -83,11 +70,6 @@ public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity
     {
         return dbContext.Set<Entity>().Where(expression).AsQueryable();
     }
-    //public IEnumerable<Entity> WhereAsNoTracking(Expression<Func<Entity, bool>> expression)
-    //{
-    //    return dbContext.Set<Entity>().AsNoTracking().Where(expression).AsQueryable();
-    //}
-
     public void Complete()
     {
         dbContext.SaveChanges();
@@ -109,7 +91,6 @@ public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity
             }
         }
     }
-
 
     private void Clean(bool disposing)
     {

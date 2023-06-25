@@ -75,8 +75,8 @@ public class AuthenticationService : IAuthenticationService
             return new ApiResponse("Request was null");
         }
 
-        var userId = User.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value; // Kullanıcının kimlik bilgisini alın
-        var user = await userManager.FindByIdAsync(userId); // Kullanıcıyı kimlik bilgisiyle bulun
+        var userId = User.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value;
+        var user = await userManager.FindByIdAsync(userId); 
 
         if (user == null)
         {
@@ -117,7 +117,6 @@ public class AuthenticationService : IAuthenticationService
             new Claim("FirstName",user.FirstName),
             new Claim("LastName",user.LastName),
             new Claim("UserName",user.UserName),
-            //new Claim("Roles",user.Roles),
             new Claim(ClaimTypes.Role,user.Roles),
 
         };

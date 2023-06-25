@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
 
 namespace simApi.Data.Context;
 
@@ -27,7 +26,7 @@ public static class SeedData
         };
 
         var passwordHasher = new PasswordHasher<AppUser>();
-        adminUser.PasswordHash = passwordHasher.HashPassword(adminUser, "adminpassword");
+        adminUser.PasswordHash = passwordHasher.HashPassword(adminUser, "admin123");
 
         modelBuilder.Entity<AppUser>().HasData(adminUser);
 

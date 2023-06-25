@@ -30,7 +30,10 @@ public class MapperProfile:Profile
         CreateMap< AppUser,AppUserResponse>();
         CreateMap<AppUserRequest,AppUser>();
 
-     
+        CreateMap<Payment, PaymentResponse>();
+        CreateMap<PaymentRequest, Payment>();
+
+
 
 
     }

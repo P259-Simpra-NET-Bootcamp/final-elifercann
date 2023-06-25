@@ -37,21 +37,6 @@ public class UserController : ControllerBase
         return model;
     }
 
-    [HttpGet("GetUser")]
-    [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    public async Task<ApiResponse<AppUserResponse>> GetUser()
-    {
-        var response = await service.GetUser(HttpContext.User);
-        return response;
-    }
-
-    [HttpGet("GetUserId")]
-    [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    public async Task<ApiResponse<string>> GetUserId()
-    {
-        var response = await service.GetUserId(HttpContext.User);
-        return response;
-    }
     [HttpGet("GetWallet")]
     [Authorize(Roles = "user", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<ApiResponse<string>> GetUserWallet()

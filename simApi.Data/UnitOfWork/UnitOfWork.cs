@@ -7,12 +7,11 @@ namespace simApi.Data.UnitOfWork;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationContext _efDbContext;
-    private readonly DapperSimDbContext _dapperDbContext;
     private bool disposed;
-    public UnitOfWork(ApplicationContext efDbContext, DapperSimDbContext dapperDbContext)
+    public UnitOfWork(ApplicationContext efDbContext)
     {
         _efDbContext = efDbContext;
-        _dapperDbContext = dapperDbContext;
+        
     }
     public void Complete()
     {
@@ -52,10 +51,7 @@ public class UnitOfWork : IUnitOfWork
         Clean(true);
     }
 
-    public IDapperRepository<Entity> DapperRepository<Entity>() where Entity : BaseModel
-    {
-        return new DapperRepository<Entity>(_dapperDbContext);
-    }
+ 
     public IGenericRepository<Entity> Repository<Entity>() where Entity : BaseModel
     {
         return new GenericRepository<Entity>(_efDbContext);
