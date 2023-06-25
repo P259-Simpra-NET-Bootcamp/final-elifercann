@@ -17,15 +17,14 @@ Bu projenin başarılı bir şekilde tamamlanması, dijital ürünlerin satış�
 
 ## Kullanılan Teknolojiler
 
--JWT
--Action Filter
--Microsoft Identity 
--Entity Framework
--Unit of Work
--Generic Repository
--DI
--Autofac
--Mapper
+# JWT
+# Action Filter
+# Microsoft Identity 
+# Entity Framework
+# Unit of Work
+# Generic Repository
+# Autofac
+# Mapper
 
 
 ## Postmande oluşturulan dokümantasyon linkleri ve ekran görüntüleri
@@ -71,5 +70,10 @@ User apisi için : https://documenter.getpostman.com/view/16297412/2s93z6eQMz
 ![Ekran görüntüsü 2023-06-25 183231](https://github.com/P259-Simpra-NET-Bootcamp/final-elifercann/assets/77544444/60f4245e-9bfb-40e5-93db-6d7fc5c946e3)
 
 
+## Projeyi Kullanmak
 
+Repoyu bilgisayarınıza indirmek için git kullanabilirsiniz.
 
+git clone https://github.com/zcomert/BTK-Akademi-ASPNET-Core-Web-Api.git
+
+appsetting.json dosyasında veri tabanı bağlantı linkinizi giriniz. Daha sonra add-migration ile migration dosyalarınızı oluşturup update-databse ile veri tabanına yansıtın. Sonrasında SeedData içerisinde admin kullanıcısı oluşturuluyor username ve passwordu orada tanımlıdır. 
